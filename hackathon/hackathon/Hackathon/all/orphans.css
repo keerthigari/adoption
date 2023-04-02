@@ -1,0 +1,30 @@
+.orp{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: black;
+    margin-top: 20px;
+}
+
+/* .row{
+    border: 1px solid blue;
+} */
+.xy{
+    margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    color: black;
+}
+body{
+    background-image: linear-gradient(135deg,#97d3ed 10%,#4562f6 100%);
+    height: 100vh;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+#ad{
+   color: black;
+   background-color: rgb(223, 206, 206); 
+}
+#ad:hover{
+    color: blue;
+}

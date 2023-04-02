@@ -1,0 +1,74 @@
+img{
+    width:100%;
+} 
+
+/* h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color:black;
+    font-weight:bolder;
+    margin-top: 50%;
+} */
+.card
+{
+    width:70%;
+    margin: auto;
+    margin-top: 10%;
+    
+}
+.location
+{
+    display: flex;
+   
+}
+.row
+{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.col
+{
+    border:5px black solid;
+}
+.card:hover
+{
+    box-shadow: 5px 5px 5px 1px;
+}
+#loc
+{
+    color:black;
+}
+#loc:hover{
+    color:blue;
+}
+body{
+    background-image: linear-gradient(135deg,#97d3ed 10%,#4562f6 100%);
+    width:100%;
+    height:100vh;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ 
+
+}
+h1{
+    text-align: center;
+    margin-top: 50px;
+}
+.one
+{
+    border:2px white solid;
+}
+h6
+{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+#head
+{
+    margin-top: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+#cb:hover
+{
+    font-weight:bolder;
+}

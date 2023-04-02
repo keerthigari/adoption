@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-app.js";
+    import { getDatabase,ref,get,set,child } from "https://www.gstatic.com/firebasejs/9.18.0/firebase-database.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
+  
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyDC0O-7K05lGfBTv2TrT7H46oOffXpKL8o",
+      authDomain: "sahara-be58c.firebaseapp.com",
+      databaseURL: "https://sahara-be58c-default-rtdb.firebaseio.com",
+      projectId: "sahara-be58c",
+      storageBucket: "sahara-be58c.appspot.com",
+      messagingSenderId: "912037885366",
+      appId: "1:912037885366:web:ec402fefd69c970ed33d17",
+      measurementId: "G-M4XP850YLV"
+    };
+  
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const db=getDatabase();
+    const data='{"name":["Ram","Laxman","Latha","Raju","Ravi","Anusha","Hemanth","Hyna","Moni","Joye"],"age":[10,15,12,16,19,14,11,18,15,19]}'
+    const obj=JSON.parse(data);
+    // let name="abc";
+    // let age=20; 
+    // let name2='xyz';
+    // let age2=25;
+    set(ref(db,'orphan/' + name),obj)
+
+    const dbRef = ref(db);
+
+    get(child(dbRef, "orphan")).then((snapshot) => {
+            if (snapshot.exists()) {
+                const invoiceObj = {};
+                snapshot.forEach(function (childSnapshot) {
+                    invoiceObj['key'] = childSnapshot.key;
+                    childSnapshot.forEach(function (grandChildSnapshot) {
+                        invoiceObj[grandChildSnapshot.key] = grandChildSnapshot.val();
+                        
+                    });
+                    
+			  console.log(invoiceObj);
+        // document.write(invoiceObj);
+
+                });
+            }
+        }).catch((error) => {
+            console.error(error);
+        });
+
+    // const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>

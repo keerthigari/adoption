@@ -1,0 +1,99 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* font-family: 'Poppins',sans-serif; */
+}
+.section1{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #ddd;
+}
+.container1{
+    width: 80%;
+    display: block;
+    margin: auto;
+    padding-top: 100px;
+}
+.content1-section{
+    float: left;
+    width: 55%;
+}
+.img-section{
+    float: right;
+    width: 40%;
+    padding: 0px 30px;
+}
+.img-section img{
+    width: 100%;
+    height: auto;
+}
+.content1-section .title{
+    text-transform: uppercase;
+    font-size: 25px;
+}
+.content1-section .content h3{
+    margin-top: 20px;
+    color: #524f4f;
+}
+.content1-section .content p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.content1-section .content .button{
+    margin-top: 30px;
+
+}
+.content1-section .content .button a{
+    background-color: #3d3d3d;
+    padding: 12px 40px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 25px;
+    letter-spacing: 1.5px;
+}
+.content1-section .content .h{
+    margin-top: 40px;
+}
+.content1-section .content .button a:hover{
+    background-color: #6355e1;
+    color: #fff;
+}
+@media screen and (max-width:768px){
+    .container1{
+        width: 80%;
+        display: block;
+        margin: auto;
+        padding-top: 50px;
+    }
+    .content1-section1{
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    .img-section{
+        float: none;
+        width: 100%;
+        display: block;
+    }
+    .img-section img{
+        width: 100%;
+        height: auto;
+    }
+    .content1-section .title{
+        text-align: center;
+        font-size: 19px;
+    }
+    .content1-section .content .button{
+        text-align: center;
+    }
+    .content1-section .content .button a{
+        padding: 9px 30px;
+    }
+    .content1-section .content .h{
+        text-align: center;
+    }
+}
+

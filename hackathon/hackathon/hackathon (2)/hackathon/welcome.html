@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="welcome.php" class="php">
+    <link rel="stylesheet" href="services.css">
+</head>
+
+<body>
+
+    <form action="charge.php" method="post">
+        <script
+          src="https://checkout.razorpay.com/v1/checkout.js"
+          data-key="764360278547"
+          data-amount="10000"
+          data-currency="INR"
+          data-name="My Company Name"
+          data-description="Payment Description"
+          data-image="https://your-image-url.com/your_logo.png"
+          data-prefill.name="John Doe"
+          data-prefill.email="johndoe@example.com"
+          data-theme.color="#007bff"
+        ></script>
+        <!-- <input type="hidden" value="Hidden Element" name="hidden"> -->
+        <label for="name">Name on Card:</label>
+            <input type="text" id="name" name="name" required>
+          
+            <label for="cardNumber">Card Number:</label>
+            <input type="text" id="cardNumber" name="cardNumber" required>
+          
+            <label for="expiryMonth">Expiration Month:</label>
+            <input type="text" id="expiryMonth" name="expiryMonth" required>
+          
+            <label for="expiryYear">Expiration Year:</label>
+            <input type="text" id="expiryYear" name="expiryYear" required>
+          
+            <label for="cvc">CVC:</label>
+            <input type="text" id="cvc" name="cvc" required>
+          
+            <label for="amount">Amount to Charge (in USD):</label>
+            <input type="text" id="amount" name="amount" required>
+          
+        <button type="submit">Submit Payment</button>
+      </form>
+      
+
+</body>
+
+</html>

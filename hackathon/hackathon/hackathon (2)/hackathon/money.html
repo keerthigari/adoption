@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link rel="stylesheet" href="formstyle.css">
+</head>
+<body>
+	<h2>Money Donations</h2>
+	<p>If you would like to make a monetary donation, please click the button below:</p>
+	<form action="https://www.paypal.com/donate" method="post" target="_blank">
+		<input type="hidden" name="business" value="your_paypal_email@example.com">
+		<input type="hidden" name="item_name" value="Donation">
+		<input type="hidden" name="currency_code" value="USD">
+		<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="Donate with PayPal">
+		<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+</body>
+</html>

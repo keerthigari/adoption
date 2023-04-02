@@ -1,0 +1,38 @@
+.container
+{
+    margin-top:10%;
+    margin-left: auto;
+}
+h1
+{
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bolder;
+}
+h3
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-emphasis-color: rgb(31, 28, 28);
+    font-size: large;
+}
+p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:bold;
+}
+.btn
+{
+    background-color: grey;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: black;
+    margin-top:3%;
+    margin-bottom:10%;
+}
+.btn:hover
+{
+    background-color:darkslateblue;
+    color: azure;
+}
+#c1
+{
+    margin:auto;
+}
